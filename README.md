@@ -126,6 +126,30 @@
     - Contract Test :  자동화된 경계 테스트를 통하여 구현 오류나 API 계약위반를 미리 차단 가능한가?
 
 
+22.11.21
+<img width="1078" alt="image" src="https://user-images.githubusercontent.com/19342119/202942878-ce01fe4f-db26-4cee-b8f2-e8aa6dfdfda1.png">
+체크포인트 - 리포팅에 충실히 기재/증빙/코드일부분/working 증적까지
+
+- 1Saga(Pub/Sub)   ==> 비동기 리포팅하면 됨
+- 2CQRS : 
+  - command query responsibility segregation, data projection
+  - C : command, 데이터 변화 가하는 것, write
+  - Q: 조회,
+  - DBMS PER SERVICE, DBMS PER SCHEME :: persistence layter 가 분리
+  - **Query모델** , GraphGL, 
+- 3Compensation / Correlation
+  - Compensation : 보상, 롤백, 원상태로 뒤집기
+  - Correlation : 
+- Request / Response (동기호출)
+  -  opn page , facebook, 
+- Circuit Breaker
+- Gateway / Ingress (
+  - 단일진입점,)
+  - 트래픽 라우팅*
+  - 인증인가 
+
+
+
 # 분석/설계
 
 
